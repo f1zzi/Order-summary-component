@@ -30,6 +30,10 @@ body {
     
 }
 
+.card__photo {
+    width: 100%;
+}
+
 .card__info {
     display: flex;
     flex-direction: column;
@@ -48,8 +52,12 @@ body {
     border-radius: 10px;
     font-weight: 700;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: 0.2s;
 }
-
+.pay:hover {
+    opacity: 0.6;
+}
 
 .card__title {
     margin: 20px 0px 10px;
@@ -85,6 +93,11 @@ body {
 .price__box a {
     color: #39319F;
     font-weight: 900;
+    transition: 0.2s;
+}
+
+.price__box a:hover {
+    opacity: 0.8;
 }
 .price {
     color: #777C8F;
@@ -100,5 +113,18 @@ body {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
 
+
+}
+
+.cancel:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:380px) {
+    .box {
+        max-width: 300px;
+    }
 }
